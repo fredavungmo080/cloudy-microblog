@@ -1,0 +1,86 @@
+/*Select Role*/
+.select-role{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 50px 150px;
+}
+
+.select-role .cloudOne{
+    position: fixed;
+    right: -57px;
+    width: 482px;
+    height: 280px;
+    top: 111px; 
+    z-index: 1;  
+}
+
+.select-role .cloudTwo{
+    position: fixed;
+    width: 560px;
+    height: 311px;
+    right: 140px;
+    top: 80px;
+    z-index: 0; 
+}
+
+.select-role .cloudThree{
+    position: fixed;
+    width: 482px;
+    height: 280px;
+    right: 70px;
+    top: 224px;    
+    z-index: 2;
+}
+
+.about{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 49px;
+    width: 694px;
+    height: 404px;
+    background: linear-gradient(180deg, #A5C8F9 3.78%, #FFFFFF 11.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 200px 0px 53px 0px;
+}
+
+.about span{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.select-role button{
+    width: 250px;
+    height: 60px;
+    background: #FDB44B;
+    border-radius: 30px; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.select-role button:hover{
+    transform: scale(105%);
+}
+
+.button-deploy{
+    position: fixed;
+    bottom: 150px;
+    left: 150px;
+}
+
+.button-attach{
+    position: fixed;
+    bottom: 150px;
+    right: 150px;
+}
+

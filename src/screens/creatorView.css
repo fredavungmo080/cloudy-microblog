@@ -1,0 +1,309 @@
+
+.action-buttons{
+    margin-top: 111px;
+    margin-bottom: 55px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 900px;
+}
+
+.action-buttons button{
+    width: 171px;
+    height: 61px;
+    background: #FDB44B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+}
+
+.action-buttons button:hover{
+    transform: scale(105%);
+}
+
+.blog-posts{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.blog-posts::-webkit-scrollbar {
+    width: 0.2em;
+}
+   
+.blog-posts::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(12, 8, 224, 0.3);
+}
+   
+.blog-posts::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.card-wrapper{
+    margin: 0px auto;
+    border: 1px solid rgb(31, 162, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: 10px;
+}
+
+.card-inner{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.address{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;    
+}
+
+.post-content{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+    /* width: 100%; */
+}
+
+.social-icons{
+    font-family: 'Roboto';
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.social-icons img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+.avatar{
+    height: 80px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+
+.empty{
+    justify-content: center;
+    min-height: 500px;
+}
+.empty p{
+    font-family: monospace;
+    color: #e6dfeb;
+    font-weight: 900;
+    font-size: 30px;
+    margin: auto;
+}
+
+.contract-address-notification{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    right: 70px;
+    top: 20px;
+}
+
+.contract-address{
+    width: 208px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9A9999;    
+}
+
+.contract-address-notification svg{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.blink{
+    animation: blink linear 2s infinite;
+}
+
+.notifications{
+    position: absolute;
+    width: 420px;
+    height: 400px;
+    max-height: 672px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    right: 70px;
+    top: 80px;
+    padding: 16px;
+    z-index: 1;
+    background: linear-gradient(180deg, #468FF5 0%, #FF8BA0 100%);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 20px;   
+}
+
+.notifications::-webkit-scrollbar {
+    width: 0.2em;
+}
+   
+.notifications::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(12, 8, 224, 0.3);
+}
+   
+.notifications::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.notifications .title{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 35px;
+}
+
+.notification{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.notification hr{
+    width: 100%;
+}
+
+.float-right{
+    /* float: right; */
+    padding-left: 500px;
+}
+
+@keyframes loadingButton{
+    0%{
+        filter: brightness(100%);
+    }
+    50%{
+      filter: brightness(40%);
+    }
+  }
+  
+@keyframes busy{
+0%{
+    color: #C071FF;
+}
+10%{
+    color: white;
+}
+20%{
+    color: #C071FF;
+}
+30%{
+    color: white;
+}
+40%{
+    color: #C071FF;
+}
+50%{
+    color: white;
+}
+60%{
+    color: #C071FF;
+}
+70%{
+    color: white;
+}
+80%{
+    color: #C071FF;
+}
+90%{
+    color: white;
+}
+}
+
+@keyframes blink {
+    0%{
+        color: white;
+    }
+    50%{
+        color: rgb(194, 16, 46);
+    }
+    100%{
+        color: #FFFFFF;
+    }
+}
+
+.top-left-blob{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.top-right-blob{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.bottom-left-blob{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.top-blob{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.5;
+}

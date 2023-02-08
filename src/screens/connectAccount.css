@@ -1,0 +1,166 @@
+/*Connect Account*/
+.connectAcct{
+  width: 100vw;
+  height: 100vh;
+  background-color: #448EF6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  gap: 86px;
+}
+
+.connectAcct .cloud1{
+  position: absolute;
+  left: 73px;
+  top: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  animation: oscillate-left-right linear 15s infinite;
+}
+
+.connectAcct .cloud2{
+  position: absolute;
+  right: 131px;
+  top: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+  animation: oscillate-right-left linear 21s infinite;
+}
+
+.connectAcct .ellipse{
+  position: absolute;
+  width: 338px;
+  height: 346px;
+  right: 42px;
+  top: 48px;
+  border-radius: 100%;
+  background: #FF8BA0;
+  box-shadow: 0px 4px 250px #FFFFFF;
+}
+
+.connectAcct .pilot{
+  position: absolute;
+  top: 39px;
+  right: 43px;
+  animation: oscillate-up-down linear 20s infinite;
+}
+
+.connectAcct .meditator{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;  
+}
+
+.connectAcct .connect-blob{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.connectAcct .connect-message{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 110px;
+  color: #00204A;
+  text-transform: uppercase;
+  margin-top: 360px;
+}
+
+.connectAcct .connect-message span{
+  background: linear-gradient(180deg, #448EF6 0%, #FAFAFC 79.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 200px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);  
+}
+
+.connectAcct .connect-button{
+  width: 381px;
+  height: 90px;
+  border: none;
+  background: #FDB44B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  border-radius: 30px;  
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.connectAcct button:hover{
+  transform: scale(103%);
+}
+
+@keyframes oscillate-up-down {
+  0% {
+      transform: translateY(0);
+  }
+
+  25% {
+      transform: translateY(20px);
+  }
+
+  50% {
+      transform: translateY(40px);
+  }
+
+  75% {
+      transform: translateY(20px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes oscillate-left-right {
+  0% {
+      transform: translateX(0);
+  }
+
+  25% {
+      transform: translateX(100px);
+  }
+
+  50% {
+      transform: translateX(200px);
+  }
+
+  75% {
+      transform: translateX(100px);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes oscillate-right-left{
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+      transform: translateX(-100px);
+  }
+
+  50% {
+      transform: translateX(-200px);
+  }
+
+  75% {
+      transform: translateX(-100px);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
